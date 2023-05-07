@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            margin: 0; 
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 50px;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .plan {
+            flex: 1;
+            background-color: gainsboro;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 450px;
+            border-radius: 15px;
+        }
+
+
+        .plan * {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .title {
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .price {
+            font-weight: 900;
+            font-size: 3rem;
+        } 
+      
+        .btn {
+            height: 30px;
+            margin-top: 20px;
+        }
+
+        .btn a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: rgb(255, 112, 60);
+            color: white;
+            border-radius: 5px;
+        }
+
+        .btn a:hover, .btn a:focus {
+            color: rgb(255, 112, 60);
+            background: white;
+        }
+        
+        @media (max-width: 1250px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="plan basic">
+            <h3 class="title">Basic</h3>
+            <h2 class="price">$11.99/month</h2>
+            <p>✅ 10GB Storage</p>
+            <p>✅ 1 User</p>
+            <p>❌ Support</p>
+            <buttom class="btn"><a href="#">Sign Up</a></buttom>
+        </div>
+        <div class="plan standard">
+            <h3 class="title">Standard</h3>
+            <h2 class="price">$19.99/month</h2>
+            <p>✅ 50GB Storage</p>
+            <p>✅ 5 Users</p>
+            <p>✅ Phone &amp; Email Support</p>
+            <buttom class="btn"><a href="#">Sign Up</a></buttom>
+        </div>
+        <div class="plan premium">
+            <h3 class="title">Premium</h3>
+            <h2 class="price">$49.99/month</h2>
+            <p>✅ 100GB Storage</p>
+            <p>✅ 50 Users</p>
+            <p>✅ 24/7 Support</p>
+            <buttom class="btn"><a href="#">Sign Up</a></buttom>
+        </div>
+    </div>
+</body>
+</html>
