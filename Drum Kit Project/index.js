@@ -24,7 +24,7 @@ function makeSound(button) {
             w_drum.play();
             break;
         case 'a':
-            var s_drum = new Audio("sounds/tom-2.mp3");
+            var a_drum = new Audio("sounds/tom-2.mp3");
             a_drum.play();
             break;
         case 's':
