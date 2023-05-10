@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    font-family: 'Lobster', cursive;
+    background-color: #252525;
+}
+
+#title {
+    font-size: 8rem;
+    text-shadow: 5px 0 #232931;
+    color: #4ECCA3;
+    text-align: center;
+}
+
+.player-name {
+    font-size: 2rem;
+    color: #4ECCA3;
+}
+
+@media (max-width: 680px) {
+    #title {
+        font-size: 4rem;
+    }
+
+    img {
+        height: 100px;
+    }
+}
