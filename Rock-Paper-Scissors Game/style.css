@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 4rem 8rem 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #10122c;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 2rem;
+    text-shadow: 3px 0 rgb(95, 45, 170);
+    text-align: center;
+    font-size: 3.5rem;
+    letter-spacing: 0.4rem;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    border-top: 0.9px solid rgb(95, 45, 170);
+    box-shadow: 2px 4px 5px 3px rgb(95, 45, 170);
+    border-radius: 4px;
+    /* width: 80%; */
+}
+
+.scoreboard p {
+    font-size: 2rem;
+    padding: 1rem;
+}
+.selection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.main-game {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 200px 20px;
+    gap: 1rem;
+}
+
+#result {
+    grid-area: 2 / 2 / 3 / span 2;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+}
+
+.you, .computer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.you {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.computer {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.player{
+     font-size: 40px;
+}
+
+.you-icon, .computer-icon {
+    font-size: 8rem;
+}
+
+.btn {
+    grid-area: 1 / 2 / 2 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn button {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0.6rem;
+    width: 5em;
+}
+
+.start:hover, .start.focus {
+    background-color: #198754;
+    color: white;
+}
+
+.reset:hover, .reset:focus {
+    background-color: #dc3545;
+    color: white;
+}
+
+.selection .icon {
+    background-color: transparent;
+    text-align: center;
+    font-size: 5rem;
+    padding: 1.2rem;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.selection .icon:hover, .selection .icon:focus {
+    background-color: rgba(255, 228, 196, 0.46);
+    transform: scale(1.1);
+}
